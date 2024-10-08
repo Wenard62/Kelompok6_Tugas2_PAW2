@@ -1,5 +1,5 @@
 #dokumentasi tugas Kelompok6_Tugas2_PAW2
-#1)membuat perencanaan kode:
+1)membuat perencanaan kode:
 berdiskusi untuk apa tema dari tugas ini dan peran masing masing anggota
 -) peran masing masing:
 Irpan : team leader, membuat perencanaan di github
