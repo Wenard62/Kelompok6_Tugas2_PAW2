@@ -1,4 +1,12 @@
 { 
-    "rewrites": 
-    { "source": "/(.*)", "destination": "/index" } 
+    "routes":[
+        {
+            "src": "/",
+            "dest": "/"
+        },
+        {
+            "src":"/test",
+            "dest":"/"
+        }
+    ]
 }
