@@ -1,0 +1,34 @@
+
+<style>
+    table, th, td {
+    border:1px solid black;
+    width: 600px;
+    }
+    th{
+        background-color: grey;
+    }
+    td{
+        background-color: whitesmoke;
+    }
+    .bodypar{
+        margin-left: 40px;
+    }
+    </style>
+    <div class="bodypar">
+    <h1>Menu</h1>
+    <p>Ini halaman menu, menampilkan daftar menu di restoran kelompok 6</p>
+    <table>
+        <tr>
+            <th>Nama</th>
+            <th>Kategori</th>
+            <th>Kode</th>
+        </tr>
+        <% menu.forEach(data => { %>
+            <tr>
+                <td><%= data.nama %></td>
+                <td><%= data.kategori %></td>
+                <td><%= data.kode %></td>
+            </tr>
+        <% }) %>
+    </table>
+    </div>
