@@ -1,0 +1,36 @@
+
+<style>
+    table, th, td {
+    border:1px solid black;
+    width: 600px;
+    }
+    th{
+        background-color: grey;
+    }
+    td{
+        background-color: whitesmoke;
+    }
+    .bodypar{
+        margin-left: 40px;
+    }
+    </style>
+    <div class="bodypar">
+    <h1>Nama</h1>
+    <p>Ini halaman nama, menampilkan daftar nama pegawai di restoran kelompok 6</p>
+    <table>
+        <tr>
+            <th>Nama</th>
+            <th>kota</th>
+            <th>Usia</th>
+            <th>Jenis kelamin</th>
+        </tr>
+        <% nama.forEach(data => { %>
+            <tr>
+                <td><%= data.nama %></td>
+                <td><%= data.kota %></td>
+                <td><%= data.usia %></td>
+                <td><%= data.jenisKelamin %></td>
+            </tr>
+        <% }) %>
+    </table>
+    </div>

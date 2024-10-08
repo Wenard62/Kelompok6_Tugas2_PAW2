@@ -28,9 +28,9 @@ app.use(expressLayout);
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
-app.use('/aboutus', usersRouter);
+app.use('/aboutus', aboutRouter);
 app.use('/nama', namaRouter);
-app.use('/contact', usersRouter);
+app.use('/contact', contactRouter);
 app.use('/menu', menuRouter);
 app.use('/reservasi', reservasiRouter);
 
