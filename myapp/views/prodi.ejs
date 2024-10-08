@@ -1,0 +1,34 @@
+
+    <style>
+    table, th, td {
+    border:1px solid black;
+    width: 600px;
+    }
+    th{
+        background-color: grey;
+    }
+    td{
+        background-color: whitesmoke;
+    }
+    .bodypar{
+        margin-left: 40px;
+    }
+    </style>
+    <div class="bodypar">
+    <h1>Prodi</h1>
+    <p>Ini halaman prodi, menampilkan daftar prodi di MDP</p>
+    <table>
+        <tr>
+            <th>Nama Prodi</th>
+            <th>Fakultas</th>
+            <th>Singkatan</th>
+        </tr>
+        <% prodi.forEach(data => { %>
+            <tr>
+                <td><%= data.nama %></td>
+                <td><%= data.fakultas %></td>
+                <td><%= data.singkatan %></td>
+            </tr>
+        <% }) %>
+    </table>
+    </div>

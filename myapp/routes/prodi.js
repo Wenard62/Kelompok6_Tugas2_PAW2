@@ -2,27 +2,10 @@ var express = require('express');
 var router = express.Router();
 
 /* GET home page. */
-router.get('/', function(req, res, next) {
-   const berita= [
-        {
-            judul: "berita 1",
-            isi : "isi berita 1"
-        },
-        {
-            judul: "berita 2",
-            isi : "isi berita 2"
-        },
-    ];
-    res.render('index', {title: 'halaman home',berita, layout: 'main'});
-});
-router.get('/about', function(req, res, next) {
-   res.render('aboutus', {title: 'halaman about us', layout: 'main' });
-});
-router.get('/contact', function(req, res, next) {
-   res.render('contact', {title: 'halaman contact', layout: 'main'});
-});
 router.get('/prodi', function(req, res, next) {
-  const prodi= [
+   //res.send("contact us");
+    //res.sendFile(__dirname + "/contact.html");
+     const prodi= [
         {
             nama: "sistem informasi",
             fakultas : "FIKR",
@@ -56,7 +39,5 @@ router.get('/prodi', function(req, res, next) {
     ];
     res.render('prodi', {title: 'halaman prodi', prodi, layout: 'main'});
 });
-
-
 
 module.exports = router;

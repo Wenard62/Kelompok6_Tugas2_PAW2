@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <p>Welcome to <%= title %></p>
+     <img src="../images/wildwest.jpg" width="100%" height="200px">
+    <h4> berita terkini</h4>
+    <% berita.forEach(data => { %>
+     <h5><%= data.judul %></h5>
+     <h5><%= data.isi %></h5>
+    <% }) %>
+    <div class="row">
+        <div class="col-sm-6 mb-3 mb-sm-0">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Berita 1</h5>
+              <p class="card-text">GEDAGEDI</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">About us update</h5>
+              <p class="card-text">pembaruan about us.</p>
+              <a href="/about" class="btn btn-primary">lihat</a>
+            </div>
+          </div>
+        </div>
+      </div>
+  </body>
+</html>
